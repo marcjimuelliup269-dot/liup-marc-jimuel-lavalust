@@ -175,6 +175,35 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
             color: var(--text);
         }
 
+        .social-row {
+            display: flex;
+            gap: 12px;
+            margin-top: 8px;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            width: 42px;
+            height: 42px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.02);
+            border: 1px solid var(--border);
+            color: var(--text);
+            text-decoration: none;
+            transition: 0.2s ease;
+            font-size: 1.15rem;
+        }
+
+        .social-link:hover {
+            transform: translateY(-1px);
+            border-color: var(--border-hot);
+            box-shadow: 0 0 18px var(--lava-glow);
+            background: rgba(221,72,20,0.08);
+        }
+
         .card-footer {
             padding: 18px 32px 30px;
         }
@@ -261,6 +290,13 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
                 <div class="info-box">
                     <div class="label">Email</div>
                     <div class="value"><?= $student['email']; ?></div>
+                </div>
+                <div class="info-box">
+                    <div class="label">Social Media</div>
+                    <div class="social-row">
+                        <a class="social-link" href="<?= $student['instagram']; ?>" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Instagram">◎</a>
+                        <a class="social-link" href="<?= $student['facebook']; ?>" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Facebook">f</a>
+                    </div>
                 </div>
             </div>
 

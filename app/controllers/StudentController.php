@@ -25,7 +25,9 @@ class StudentController extends Controller {
             'course'     => 'BS Information Technology',
             'year'       => '3rd Year',
             'section'    => '3-F5',
-            'email'      => 'marcjimuelliup269@gmail.com'
+            'email'      => 'marcjimuelliup269@gmail.com',
+            'instagram'  => 'https://www.instagram.com/jayzssss_/',
+            'facebook'   => 'http://facebook.com/marc.liup'
         ];
 
         $this->call->view('student_profile', ['student' => $student]);
