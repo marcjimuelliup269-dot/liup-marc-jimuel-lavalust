@@ -82,7 +82,16 @@ $autoload['libraries'] = array();
 |
 |	$autoload['helpers'] = array('url', 'file');
 */
-$autoload['helpers'] = array();
+$autoload['helpers'] = array('url');
+
+/*
+| -------------------------------------------------------------------
+|  Auto-load Config files
+| -------------------------------------------------------------------
+| Load the middleware config so the framework can read the middleware map.
+|
+*/
+$autoload['configs'] = array('middleware');
 
 /*
 | -------------------------------------------------------------------
@@ -94,17 +103,5 @@ $autoload['helpers'] = array();
 */
 $autoload['models'] = array();
 
-/*
-| -------------------------------------------------------------------
-|  Auto-load Config files
-| -------------------------------------------------------------------
-| Prototype:
-|
-|	$autoload['configs'] = array('config1', 'config2');
-|
-| NOTE: This item is intended for use ONLY if you have created custom
-| config files.  Otherwise, leave it blank.
-|
-*/
-$autoload['configs'] = array();
+
 ?>
